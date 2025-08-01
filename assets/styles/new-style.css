@@ -1,0 +1,138 @@
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+img{
+    max-width: 100%;
+}
+
+.bg-blue {
+    background: #3A2D7C;
+}
+
+
+.nav-logo {
+    width: 120px;
+    margin-top: -30px;
+    border-radius: 2px;
+    mix-blend-mode: multiply;
+}
+
+.login-btn{
+    background-color: #DC3545;
+    border: 1px solid #DC3545;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 20px !important;
+    display: block;
+    transition: all .2s linear;
+}
+
+.login-btn:hover{
+    color: #DC3545;
+    background-color: white;
+}
+
+.reg-btn{
+    border: 1px solid #DC3545;
+    color: #DC3545;
+    transition: all .2s linear;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 20px !important;
+    display: block;
+}
+
+.reg-btn:hover{
+    color: white;
+    background-color: #DC3545;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.serv-box {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all .3s linear;
+}
+
+.serv-box:hover {
+    transform: translateY(-10px);
+}
+
+.serv-box h4 i {
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #3A2D7C;
+    border-radius: 100px;
+    color: white;
+}
+
+.call-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: red;
+    border: 2px solid white;
+    width: fit-content;
+    background-color: white;
+}
+
+.contact-form label {
+    color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: none;
+    border-color: white;
+    outline: none;
+}
+
+.contact-form .submit-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: red;
+    font-weight: 600;
+}
+
+.social-link i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100px;
+    transition: all .2s linear;
+}
+
+.social-link:hover i {
+    background-color: white;
+    color: red;
+}
+
+.iti {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-logo {
+        width: 100px;
+        margin: 0;
+        border-radius: 2px;
+    }
+}
