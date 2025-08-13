@@ -53,7 +53,7 @@
                         <a class="nav-link" href="./about-us.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#services" id="serviceDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="./services" id="serviceDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
@@ -100,7 +100,8 @@
 
     <div class="container pb-5" id="services" style="scroll-margin: 150px;">
         <div class="bg-blue p-2 p-lg-4 p-md-4">
-            <h1 class="text-white">Fast, Secure & Global Shipping Solutions – <br class="d-block d-lg-none d-md-none">  R Worldwide Express</h1>
+            <h1 class="text-white">Fast, Secure & Global Shipping Solutions – <br class="d-block d-lg-none d-md-none"> R
+                Worldwide Express</h1>
         </div>
         <div class="py-3">
             <p>Welcome to R Worldwide Express, a reliable business partner for Express Courier Services in Canada and
@@ -120,8 +121,8 @@
             logistics supported by real-time tracking, specialized handling, and outstanding customer service. No matter
             whether you're searching for Express Courier Services in Canada or secure international courier services,
             we've got you covered.</p>
-        <div class="row mt-4 gap-3 gap-lg-0">
-            <div class="col-lg-3 col-md-6">
+        <div class="row mt-4">
+            <div class="col-lg-3 col-md-6 mt-3">
                 <div class="serv-box">
                     <h4>
                         <i class="fa-solid fa-plane"></i>
@@ -129,10 +130,11 @@
                     </h4>
                     <p>Fast and reliable air shipping for urgent or high-value cargo, with global reach and customs
                         support.</p>
-                    <a href="./services/air-cargo.html" class="lm-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="./services/air-cargo.html" class="lm-btn">Learn More <i
+                            class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-3">
                 <div class="serv-box">
                     <h4>
                         <i class="fa-solid fa-truck"></i>
@@ -140,10 +142,11 @@
                     </h4>
                     <p>Nationwide freight transportation with both full truckload (FTL) and less-than-truckload
                         (LTL) options for businesses of all sizes.</p>
-                    <a href="./services/trucking.html" class="lm-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="./services/trucking.html" class="lm-btn">Learn More <i
+                            class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-3">
                 <div class="serv-box">
                     <h4>
                         <i class="fa-solid fa-ship"></i>
@@ -151,10 +154,11 @@
                     </h4>
                     <p>Cost-effective sea freight solutions for FCL and LCL shipments—ideal for bulk goods and
                         international courier services.</p>
-                    <a href="./services/shipping.html" class="lm-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="./services/shipping.html" class="lm-btn">Learn More <i
+                            class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-3">
                 <div class="serv-box">
                     <h4>
                         <i class="fa-solid fa-gift"></i>
@@ -164,18 +168,90 @@
                         tracking, and express options. As a fast and affordable courier service, we prioritize your
                         timelines and budget without compromising quality.
                     </p>
-                    <a href="./services/canada-to-india-courier.html" class="lm-btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="./services/canada-to-india-courier.html" class="lm-btn">Learn More <i
+                            class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="price-calc py-5 bg-light mt-5">
+        <div class="container">
+            <div class=" mb-4">
+                <h2 class="fw-bold">Freight Price Calculator</h2>
+                <p class="text-muted">Quickly estimate shipping costs for your documents or non-documents with multiple
+                    delivery options.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <form class="row g-3 align-items-end">
+                        <!-- Styled Radio Buttons -->
+                        <div class="col-md-6 bg-white p-3 rounded">
+                            <div>
+                                <label class="form-label d-block">Shipment Type</label>
+                                <div class="btn-group w-100" role="group" aria-label="Shipment Type">
+                                    <input type="radio" class="btn-check" name="package_type" id="document"
+                                        value="Document" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="document">Document</label>
+
+                                    <input type="radio" class="btn-check" name="package_type" id="non-document"
+                                        value="Non-Document" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="non-document">Non-Document</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 bg-white p-3 rounded m-0">
+                            <div class="row gap-3 gap-md-0">
+                                <div class="col-md-4">
+                                    <label for="service-type" class="form-label">Service Type</label>
+                                    <select id="service-type" name="service_type" class="form-select" required>
+                                        <option value="">-- Select Service Type --</option>
+                                        <option value="express">Express</option>
+                                        <option value="economy">Economy</option>
+                                        <option value="worldwide">Worldwide</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="weight" class="form-label">Weight (kg)</label>
+                                    <input type="number" id="weight" name="weight" class="form-control" min="0"
+                                        step="0.01" placeholder="Enter weight" required>
+                                </div>
+
+                                <div class="col-md-4 d-flex align-items-end">
+                                    <button type="submit" class="btn reg-btn w-100">Calculate Price</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Total Price Display -->
+                        <div class="bg-white p-3 mt-3 rounded">
+                            <p>
+                                <b>Total Cost: </b>
+                                <span id="totalPrice" class="fw-bold">CAD 20</span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/images/price-calculator.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="container py-5" id="about" style="scroll-margin: 150px;">
         <div class="row">
             <div class="col-lg-6 pe-5">
-                
+
                 <h3 class="fw-semibold">Let’s Move Your Business Forward</h3>
-                <p>Whether shipping locally across the street or globally around the world, rely on R Worldwide Express to get the job done with speed, care, and accuracy. Our dedication to being quick and economical courier service keeps your business competitive and your packages in transit right on time.</p>
+                <p>Whether shipping locally across the street or globally around the world, rely on R Worldwide Express
+                    to get the job done with speed, care, and accuracy. Our dedication to being quick and economical
+                    courier service keeps your business competitive and your packages in transit right on time.</p>
             </div>
             <div class="col-lg-6">
                 <h3 class="fw-semibold fs-4">Why Choose R Worldwide Express?</h3>
@@ -187,7 +263,8 @@
                     <li>Experienced team dedicated to on-time delivery</li>
                     <li>Recognized as one of the best courier services in Canada</li>
                 </ul>
-                <p>Whether you're searching for Express Courier Services in Canada or need assistance with international courier services, we offer a hassle-free experience supported by professional logistics.</p>
+                <p>Whether you're searching for Express Courier Services in Canada or need assistance with international
+                    courier services, we offer a hassle-free experience supported by professional logistics.</p>
                 <!-- <div>
                     <h4 class="fs-6 fw-semibold"><i class="fa-regular fa-clock"></i> Real-Time Tracking</h4>
                     <p class="fs-6">Track your shipment live from pickup to doorstep.</p>
