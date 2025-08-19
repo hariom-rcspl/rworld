@@ -3,7 +3,7 @@ a {
     font-weight: 500;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -19,7 +19,17 @@ img{
     mix-blend-mode: multiply;
 }
 
-.login-btn{
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* Optional: aligns dropdown */
+}
+
+.navbar-nav .dropdown-toggle::after{
+    display: none;
+}
+
+.login-btn {
     background-color: #DC3545;
     border: 1px solid #DC3545;
     color: white;
@@ -30,12 +40,12 @@ img{
     transition: all .2s linear;
 }
 
-.login-btn:hover{
+.login-btn:hover {
     color: #DC3545;
     background-color: white;
 }
 
-.reg-btn{
+.reg-btn {
     border: 1px solid #DC3545;
     color: #DC3545;
     transition: all .2s linear;
@@ -45,7 +55,7 @@ img{
     display: block;
 }
 
-.reg-btn:hover{
+.reg-btn:hover {
     color: white;
     background-color: #DC3545;
 }
@@ -127,6 +137,29 @@ img{
 
 .iti {
     width: 100%;
+}
+
+.contact-section{
+    background: url('../images/contact-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.contact-section .container{
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width: 576px) {
